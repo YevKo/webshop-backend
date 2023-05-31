@@ -1,0 +1,18 @@
+uuid: ccb1ad6e-7ba8-442b-a96d-85873170630e
+langcode: en
+status: true
+dependencies:
+  module:
+    - basic_auth
+    - path_alias
+    - serialization
+id: entity.path_alias
+plugin_id: 'entity:path_alias'
+granularity: resource
+configuration:
+  methods:
+    - GET
+  formats:
+    - json
+  authentication:
+    - basic_auth
