@@ -23,7 +23,8 @@
         "drupal/jsonapi_image_styles": "^3.0",
         "drupal/paragraphs": "^1.15",
         "drupal/restui": "^1.21",
-        "drush/drush": "^11.5"
+        "drush/drush": "^11.5",
+        "platformsh/config-reader": "^2.4"
     },
     "conflict": {
         "drupal/drupal": "*"
