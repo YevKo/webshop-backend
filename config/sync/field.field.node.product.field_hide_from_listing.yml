@@ -1,0 +1,23 @@
+uuid: a6f3dbd9-e008-4dd2-adc4-9970df8c7038
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_hide_from_listing
+    - node.type.product
+id: node.product.field_hide_from_listing
+field_name: field_hide_from_listing
+entity_type: node
+bundle: product
+label: 'Hide from listing'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

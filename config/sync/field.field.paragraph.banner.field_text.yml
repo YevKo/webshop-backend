@@ -1,0 +1,23 @@
+uuid: fb002e80-890a-475f-944b-89ac3daae4c9
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_text
+    - paragraphs.paragraphs_type.banner
+  module:
+    - text
+id: paragraph.banner.field_text
+field_name: field_text
+entity_type: paragraph
+bundle: banner
+label: Text
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: false
+  required_summary: false
+field_type: text_with_summary

@@ -1,0 +1,23 @@
+uuid: 244f71c7-dfe3-474c-98dc-affb98473d16
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_reproducible
+    - node.type.product
+id: node.product.field_reproducible
+field_name: field_reproducible
+entity_type: node
+bundle: product
+label: 'Can make more'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

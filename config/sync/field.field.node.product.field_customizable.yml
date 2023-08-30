@@ -1,0 +1,23 @@
+uuid: b5a1f620-81bd-42a8-a1c9-85c2110d1847
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_customizable
+    - node.type.product
+id: node.product.field_customizable
+field_name: field_customizable
+entity_type: node
+bundle: product
+label: 'Can be customized'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

@@ -1,0 +1,18 @@
+uuid: 28774cf3-d142-4776-8e5c-57cc0ba70819
+langcode: en
+status: false
+dependencies:
+  module:
+    - basic_auth
+    - serialization
+    - taxonomy
+id: entity.taxonomy_vocabulary
+plugin_id: 'entity:taxonomy_vocabulary'
+granularity: resource
+configuration:
+  methods:
+    - GET
+  formats:
+    - json
+  authentication:
+    - basic_auth

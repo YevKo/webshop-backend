@@ -1,0 +1,23 @@
+uuid: 049fa21d-ee1c-4dcd-982f-6d3e13b8798c
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_3_for_2
+    - node.type.product
+id: node.product.field_3_for_2
+field_name: field_3_for_2
+entity_type: node
+bundle: product
+label: '3 for 2'
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'Yes'
+  off_label: 'No'
+field_type: boolean

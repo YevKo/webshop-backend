@@ -1,0 +1,160 @@
+uuid: 75a0286b-72d6-42d9-b981-fee5d553d4b9
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.product.field_3_for_2
+    - field.field.node.product.field_category
+    - field.field.node.product.field_customizable
+    - field.field.node.product.field_description
+    - field.field.node.product.field_hide_from_listing
+    - field.field.node.product.field_price
+    - field.field.node.product.field_product_image
+    - field.field.node.product.field_quantity
+    - field.field.node.product.field_reproducible
+    - image.style.thumbnail
+    - node.type.product
+  module:
+    - field_layout
+    - image
+    - layout_discovery
+    - path
+    - text
+third_party_settings:
+  field_layout:
+    id: layout_twocol
+    settings:
+      label: ''
+id: node.product.default
+targetEntityType: node
+bundle: product
+mode: default
+content:
+  created:
+    type: datetime_timestamp
+    weight: 7
+    region: first
+    settings: {  }
+    third_party_settings: {  }
+  field_3_for_2:
+    type: boolean_checkbox
+    weight: 16
+    region: second
+    settings:
+      display_label: true
+    third_party_settings: {  }
+  field_category:
+    type: options_select
+    weight: 0
+    region: top
+    settings: {  }
+    third_party_settings: {  }
+  field_customizable:
+    type: boolean_checkbox
+    weight: 14
+    region: second
+    settings:
+      display_label: true
+    third_party_settings: {  }
+  field_description:
+    type: text_textarea
+    weight: 3
+    region: top
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+  field_hide_from_listing:
+    type: boolean_checkbox
+    weight: 17
+    region: second
+    settings:
+      display_label: true
+    third_party_settings: {  }
+  field_price:
+    type: number
+    weight: 13
+    region: first
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+  field_product_image:
+    type: image_image
+    weight: 2
+    region: top
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
+    third_party_settings: {  }
+  field_quantity:
+    type: number
+    weight: 11
+    region: first
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+  field_reproducible:
+    type: boolean_checkbox
+    weight: 15
+    region: second
+    settings:
+      display_label: true
+    third_party_settings: {  }
+  langcode:
+    type: language_select
+    weight: 4
+    region: first
+    settings:
+      include_locked: true
+    third_party_settings: {  }
+  path:
+    type: path
+    weight: 6
+    region: first
+    settings: {  }
+    third_party_settings: {  }
+  promote:
+    type: boolean_checkbox
+    weight: 8
+    region: first
+    settings:
+      display_label: true
+    third_party_settings: {  }
+  status:
+    type: boolean_checkbox
+    weight: 10
+    region: first
+    settings:
+      display_label: true
+    third_party_settings: {  }
+  sticky:
+    type: boolean_checkbox
+    weight: 9
+    region: first
+    settings:
+      display_label: true
+    third_party_settings: {  }
+  title:
+    type: string_textfield
+    weight: 1
+    region: top
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  translation:
+    weight: 12
+    region: first
+    settings: {  }
+    third_party_settings: {  }
+  uid:
+    type: entity_reference_autocomplete
+    weight: 5
+    region: first
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden: {  }

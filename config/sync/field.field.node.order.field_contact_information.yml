@@ -1,0 +1,19 @@
+uuid: 2f191d99-a55f-4294-a21e-d124d184041a
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_contact_information
+    - node.type.order
+id: node.order.field_contact_information
+field_name: field_contact_information
+entity_type: node
+bundle: order
+label: 'Contact information'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string_long
