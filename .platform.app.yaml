@@ -74,7 +74,6 @@ hooks:
     # No services are available but the disk is writeable.
     build: |
         set -e
-        cp web/sites/default/default.settings.php web/sites/default/settings.php
         chmod 644 web/sites/default/settings.php
     # The deploy hook runs after your application has been deployed and started.
     # Code cannot be modified at this point but the database is available.
@@ -126,8 +125,6 @@ web:
 
                 # Deny direct access to configuration files.
                 '^/sites/sites\.php$':
-                    scripts: false
-                '^/sites/[^/]+/settings.*?\.php$':
                     scripts: false
 
         # The files directory has its own special configuration rules.
