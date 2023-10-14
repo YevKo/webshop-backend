@@ -126,6 +126,8 @@ web:
                 # Deny direct access to configuration files.
                 '^/sites/sites\.php$':
                     scripts: false
+                '^/sites/[^/]+/settings.*?\.php$':
+                    scripts: false
 
         # The files directory has its own special configuration rules.
         '/sites/default/files':
@@ -151,7 +153,7 @@ crons:
             start: 'cd web ; drush core-cron'
 
 source:
-  operations:
-    auto-update:
-      command: |
-        curl -fsS https://raw.githubusercontent.com/platformsh/source-operations/main/setup.sh | { bash /dev/fd/3 sop-autoupdate; } 3<&0
+    operations:
+        auto-update:
+            command: |
+                curl -fsS https://raw.githubusercontent.com/platformsh/source-operations/main/setup.sh | { bash /dev/fd/3 sop-autoupdate; } 3<&0

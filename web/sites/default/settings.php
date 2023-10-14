@@ -756,15 +756,20 @@ $settings['entity_update_backup'] = TRUE;
  */
 $settings['migrate_node_migrate_type_classic'] = FALSE;
 
-// Automatically generated include for settings managed by ddev.
-if (file_exists(__DIR__ . '/settings.ddev.php') && getenv('IS_DDEV_PROJECT') == 'true') {
-  include __DIR__ . '/settings.ddev.php';
+// Local settings. These come last so that they can override anything.
+if (file_exists($app_root . '/' . $site_path . '/settings.local.php')) {
+  include $app_root . '/' . $site_path . '/settings.local.php';
 }
 
 $databases = [];
 $config_directories = [];
 $settings['update_free_access'] = FALSE;
 $settings['container_yamls'][] = $app_root . '/' . $site_path . '/services.yml';
+
+// Automatically generated include for settings managed by ddev.
+if (file_exists(__DIR__ . '/settings.ddev.php') && getenv('IS_DDEV_PROJECT') == 'true') {
+  include __DIR__ . '/settings.ddev.php';
+}
 
 // Set up a config sync directory.
 //
@@ -776,7 +781,3 @@ if (file_exists($app_root . '/' . $site_path . '/settings.platformsh.php')) {
   include $app_root . '/' . $site_path . '/settings.platformsh.php';
 }
 
-// Local settings. These come last so that they can override anything.
-if (file_exists($app_root . '/' . $site_path . '/settings.local.php')) {
-  include $app_root . '/' . $site_path . '/settings.local.php';
-}

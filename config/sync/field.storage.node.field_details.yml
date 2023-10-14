@@ -1,17 +1,16 @@
-uuid: 4cb5918c-c838-4148-bdad-0f783d03f31c
+uuid: 026053f8-8a86-4ab3-ae9f-01531a4bd5e8
 langcode: en
 status: true
 dependencies:
   module:
     - node
-id: node.field_id
-field_name: field_id
+    - text
+id: node.field_details
+field_name: field_details
 entity_type: node
-type: integer
-settings:
-  unsigned: false
-  size: normal
-module: core
+type: text_long
+settings: {  }
+module: text
 locked: false
 cardinality: 1
 translatable: true

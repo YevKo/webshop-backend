@@ -13,8 +13,11 @@ database:
   version: "10.4"
 use_dns_when_possible: true
 composer_version: "2"
-web_environment: []
 nodejs_version: "16"
+web_environment:
+  - PLATFORMSH_CLI_TOKEN=PdAl1WVE_tRCdGmRwhWQJr5rf83s32OFBRAdqjpZceo
+  - PLATFORM_ENVIRONMENT=main
+  - PLATFORM_PROJECT=33i32kvwbas3y
 
 # Key features of ddev's config.yaml:
 

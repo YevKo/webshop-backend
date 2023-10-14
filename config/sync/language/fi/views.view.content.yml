@@ -11,8 +11,6 @@ display:
         type:
           label: Sisältötyyppi
           separator: ', '
-        name:
-          label: Tekijä
         status:
           label: Tila
           settings:

@@ -1,0 +1,19 @@
+uuid: 3fc95740-9217-444b-bca7-ec5d7c5e1092
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_order_id
+    - node.type.order
+id: node.order.field_order_id
+field_name: field_order_id
+entity_type: node
+bundle: order
+label: 'Order id'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

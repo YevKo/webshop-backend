@@ -1,0 +1,21 @@
+uuid: 220b5ed9-5f32-43db-b530-60ce1edaa98c
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_details
+    - node.type.order
+  module:
+    - text
+id: node.order.field_details
+field_name: field_details
+entity_type: node
+bundle: order
+label: Details
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

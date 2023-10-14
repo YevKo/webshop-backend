@@ -1,18 +1,20 @@
-uuid: c45e9dd4-2ed0-4317-b945-faf52586e713
+uuid: 8a19e979-494f-46cf-8b1d-4b38a65f628a
 langcode: en
 status: true
 dependencies:
   module:
     - node
-id: node.field_products
-field_name: field_products
+id: node.field_order_id
+field_name: field_order_id
 entity_type: node
-type: entity_reference
+type: string
 settings:
-  target_type: node
+  max_length: 255
+  case_sensitive: false
+  is_ascii: false
 module: core
 locked: false
-cardinality: -1
+cardinality: 1
 translatable: true
 indexes: {  }
 persist_with_no_fields: false

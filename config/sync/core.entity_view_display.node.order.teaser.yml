@@ -6,8 +6,8 @@ dependencies:
     - core.entity_view_mode.node.teaser
     - field.field.node.order.field_contact_information
     - field.field.node.order.field_date
-    - field.field.node.order.field_id
-    - field.field.node.order.field_products
+    - field.field.node.order.field_details
+    - field.field.node.order.field_order_id
     - field.field.node.order.field_status
     - node.type.order
   module:
@@ -32,7 +32,7 @@ content:
 hidden:
   field_contact_information: true
   field_date: true
-  field_id: true
-  field_products: true
+  field_details: true
+  field_order_id: true
   field_status: true
   langcode: true

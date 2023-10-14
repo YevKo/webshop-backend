@@ -17,6 +17,9 @@ settings:
     -
       value: row-reverse
       label: 'Image on the right'
+    -
+      value: wide
+      label: 'Full width'
   allowed_values_function: ''
 module: options
 locked: false

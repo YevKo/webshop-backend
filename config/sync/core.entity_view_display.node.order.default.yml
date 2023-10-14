@@ -5,14 +5,15 @@ dependencies:
   config:
     - field.field.node.order.field_contact_information
     - field.field.node.order.field_date
-    - field.field.node.order.field_id
-    - field.field.node.order.field_products
+    - field.field.node.order.field_details
+    - field.field.node.order.field_order_id
     - field.field.node.order.field_status
     - node.type.order
   module:
     - datetime
     - field_layout
     - layout_discovery
+    - text
     - user
 third_party_settings:
   field_layout:
@@ -40,22 +41,20 @@ content:
     third_party_settings: {  }
     weight: 105
     region: content
-  field_id:
-    type: number_integer
+  field_details:
+    type: text_default
     label: above
-    settings:
-      thousand_separator: ''
-      prefix_suffix: true
+    settings: {  }
     third_party_settings: {  }
-    weight: 102
+    weight: 107
     region: content
-  field_products:
-    type: entity_reference_label
+  field_order_id:
+    type: string
     label: above
     settings:
-      link: true
+      link_to_entity: false
     third_party_settings: {  }
-    weight: 104
+    weight: 108
     region: content
   field_status:
     type: entity_reference_label
