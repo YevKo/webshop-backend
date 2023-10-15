@@ -22,6 +22,7 @@
         "drupal/entity_clone": "^2.0@beta",
         "drupal/jsonapi_image_styles": "^3.0",
         "drupal/paragraphs": "^1.15",
+        "drupal/quick_node_clone": "^1.16",
         "drupal/restui": "^1.21",
         "drush/drush": "^11.5",
         "platformsh/config-reader": "^2.4"

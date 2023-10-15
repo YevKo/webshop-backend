@@ -1,0 +1,11 @@
+_core:
+  default_config_hash: 6XRelHPjACQVOo9yRQMmbXt-ysCA2Pt6l762bxQQbdw
+exclude:
+  node:
+    product:
+      - field_3_for_2
+      - field_hide_from_listing
+      - field_product_image
+  paragraph: {  }
+text_to_prepend_to_title: CLONE
+clone_status: true
