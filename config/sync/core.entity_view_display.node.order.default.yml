@@ -30,44 +30,37 @@ content:
     label: above
     settings: {  }
     third_party_settings: {  }
-    weight: 106
+    weight: 4
     region: content
   field_date:
     type: datetime_default
     label: above
     settings:
       timezone_override: ''
-      format_type: medium
+      format_type: olivero_medium
     third_party_settings: {  }
-    weight: 105
+    weight: 2
     region: content
   field_details:
     type: text_default
     label: above
     settings: {  }
     third_party_settings: {  }
-    weight: 107
-    region: content
-  field_order_id:
-    type: string
-    label: above
-    settings:
-      link_to_entity: false
-    third_party_settings: {  }
-    weight: 108
+    weight: 3
     region: content
   field_status:
     type: entity_reference_label
     label: above
     settings:
-      link: true
+      link: false
     third_party_settings: {  }
-    weight: 103
+    weight: 1
     region: content
   links:
     settings: {  }
     third_party_settings: {  }
-    weight: 100
+    weight: 0
     region: content
 hidden:
+  field_order_id: true
   langcode: true
