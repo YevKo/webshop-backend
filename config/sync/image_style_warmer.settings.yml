@@ -1,0 +1,10 @@
+_core:
+  default_config_hash: 7wcI6NyqWC9VsglvfEKjmQ9XY_D7lsTWkq0cRM4Ji7A
+initial_image_styles:
+  100x100: 100x100
+  large: large
+  medium: medium
+  wide: wide
+queue_image_styles:
+  media_library: media_library
+  thumbnail: thumbnail

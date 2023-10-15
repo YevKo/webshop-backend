@@ -16,7 +16,7 @@ dependencies:
     - node.type.product
   module:
     - field_layout
-    - image
+    - focal_point
     - layout_discovery
     - path
     - text
@@ -79,12 +79,14 @@ content:
       placeholder: ''
     third_party_settings: {  }
   field_product_image:
-    type: image_image
+    type: image_focal_point
     weight: 2
     region: top
     settings:
       progress_indicator: throbber
       preview_image_style: thumbnail
+      preview_link: true
+      offsets: '50,50'
     third_party_settings: {  }
   field_quantity:
     type: number
